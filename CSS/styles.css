@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  box-sizing: border-box;
+  background-color: grey;
+}
+
+header {
+  width: 80%;
+  background-color: black;
+  height: 5rem;
+  margin: 0 auto;
+}
+nav {
+  background-color: hsl(190, 30%, 50%);
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.navigation p {
+  padding: 1.75rem 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.navigation p:first-of-type {
+  flex-grow: 1;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 3rem;
+}
+
+.navigation p:last-of-type {
+  padding-right: 3rem;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#mission {
+  width: 94.6%;
+  margin: 0 auto;
+  height: 20rem;
+  align-items: center;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/604ebfaf22e44a51184e5ac6/1626366274180-L37UPHMY2XWKUKT4WSZU/image-asset.jpeg"); /* Replace with the actual image path */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; /* Optional - this makes the background fixed */
+  padding: 2rem; /* Add padding to separate the content from the background */
+}
+#mission h1 {
+  z-index: 5;
+}
+#mission div {
+  background-color: hsl(30, 85%, 85%);
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+#gallery {
+  width: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#gallery div:first-of-type {
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+#gallery h1 {
+  background-color: hsl(190, 30%, 50%);
+  padding: 1.5rem;
+}
+
+#gallery div:last-of-type {
+  justify-content: space-around;
+}
+
+#team {
+  background-color: hsl(30, 85%, 85%);
+}
+
+#team div:first-of-type {
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+figure img {
+  height: 12rem;
+  padding-left: 0.5rem;
+  width: auto;
+  overflow: hidden;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+figcaption {
+  text-align: center;
+  position: relative;
+  top: -2rem;
+  background-color: hsl(190, 30%, 50%);
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  height: 7rem;
+  background-color: hsl(190, 30%, 50%);
+}
+
+footer .flex {
+  flex-direction: column;
+}
+
+footer .flex div {
+  padding: 1rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 890px) {
+  .navigation {
+    width: 100%;
+  }
+
+  .navigation {
+    display: inline-block;
+  }
+
+  .navigation p:not(:first-of-type) {
+    padding: 0.1rem 0.5rem 0.3rem 1rem;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .navigation p:first-of-type {
+    text-align: center;
+  }
+
+  a {
+    background-color: hsl(190, 30%, 50%);
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+  }
+}
